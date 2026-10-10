@@ -14,6 +14,13 @@ app.get('/health', (req,res) => {
     })
 })
 
+app.get('/chat', (req, res) => {
+    return res.status(200).json({
+        success: true,
+        message: "Now you can chat AI throught terminal"
+    })
+})
+
 app.get('/', async(req, res) => {
     return res.status(200).json({
         success: true,
