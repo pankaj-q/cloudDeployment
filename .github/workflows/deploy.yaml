@@ -7,12 +7,12 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: checkout role
         uses: actions/checkout@v5
 
-      - name: deploy via ssh
+      - name: Deploy via ssh
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.SSH_HOST }}
