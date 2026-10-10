@@ -16,7 +16,7 @@ app.get('/health', (req,res) => {
 
 app.get('/', async(req, res) => {
     return res.status(200).json({
-        message: "Everything okay"
+        message: "Everything okay and the all parts are working fine like"
     })
 })
 
