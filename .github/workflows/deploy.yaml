@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout role
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: deploy via ssh
         uses: appleboy/ssh-action@v1
